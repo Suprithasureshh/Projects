@@ -1,0 +1,230 @@
+html{
+  background-color: black; 
+
+}
+.container{
+    background:skyblue ;
+  
+    
+}
+.heading{
+    background:cadetblue;
+    height: 12%;
+    text-align: center;
+    padding-top: 1%;
+}
+.division1{
+    margin-top: 3%;
+    float:left;
+    width: 40%;
+}
+.division2{
+    margin-top: 3%;
+    float:right;
+    width: 40%;
+}
+
+.field1{
+    float:right;
+    margin-right: 10%;
+    width: 30%; 
+ 
+
+}
+
+
+.gen1{
+    margin-left: 14.5%;
+ 
+   
+}
+.fields  input[type="text"]{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 30%;
+    
+ }
+ #title{
+    margin-left: 12.5%;
+ }
+ #name{
+    margin-left: 10.8%;
+ }
+ #pname{
+    margin-left: 4%;
+ }
+ #date{
+    margin-left: 0.8%;
+    width:30%;
+ }
+ #fname{
+    margin-left: 0.5%;
+ }
+ .fields  input[type="tel"]{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 30%; 
+ }
+ .fields  input[type="number"]{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 30%; 
+ }
+ .fields  input[type="date"]{
+    height: 20px;
+    width: 80%; 
+ }
+
+ .fields  input[type="mail"]{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    height: 20px;
+    width: 30%; 
+ }
+ 
+#home,#mobile,#kin1,#work,#kin2,#fax{
+margin-left: 11%;
+width:78%;
+}
+
+#f1,#f2,#f3,#f4,#f5,#f6{
+    margin-left: 12%;
+}
+ #mail{
+    margin-left: 19.5%;
+ }
+ #address1,#address2,#address{
+    margin-left: 3.5%;
+ }
+ #sub{
+    margin-left: 8%;
+    width:30%
+ }
+
+.field2{
+    float:right;
+   
+}
+.field3{
+    margin-left:23% ;
+    float:right;
+}
+.field4{
+    float:right;
+}
+.field5{
+    margin-left:23% ;
+    float:right;
+}
+.field6{
+   
+    float:right;
+}
+.field7{
+    margin-left:23% ;
+    float:right;
+}
+
+
+.field8 {
+    float:right;
+    margin-left: 30%;
+    width: 30%; 
+ 
+ 
+}
+.field9 {
+    float:right;
+    margin-left: 30%;
+    width: 30%; 
+    margin-bottom: 2%;
+ 
+    
+}
+.field10{
+    float:right;
+    margin-left: 30%;
+    
+    width: 30%; 
+ 
+}
+.field11{
+    float:right;
+    margin-left: 30%;
+    width: 30%; 
+}
+#ihi{
+    margin-left: 6%;
+}
+#recstatus{
+    margin-left: 2.3%;
+}
+#update{
+    margin-left: 4.5%;
+}
+#registerby{
+    margin-left: 0%;
+    width:15%;
+}
+.btn{
+    margin-left: 42.5%
+}
+.fields span{
+    font-style:normal;
+    visibility: hidden;
+
+}
+.fields.error input{
+    border-color:red;
+}
+.fields.success input{
+    border-color: green;
+}
+
+.fields.success select{
+    border-color: green; 
+}
+.fields.error select{
+border-color:red;
+}
+.fields.error textarea{
+    border-color:red; 
+}
+.fields.success textarea{
+    border-color: green; 
+}
+.fields.error span{
+    color:red;
+    visibility: visible;
+    margin-left:20%;
+}
+.fieldsi.fa-exclamation-circle{
+    visibility: hidden;
+    
+  }
+.fields i.fa-check-circle{
+    visibility: hidden;
+}
+.fields.success i.fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+.fields.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+.fields i.fa-check-circle{
+    position: absolute;
+    visibility: hidden;
+    margin-left: -25px;
+    margin-top: 4px;
+}
+.fields i.fa-exclamation-circle{
+    position: absolute;
+    visibility: hidden;
+    margin-left: -25px;
+    margin-top: 4px;
+}

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Form Data</title>
+</head>
+<body>
+  <h1>Form Data</h1>
+   <p>Medicare: <span id="Medicare"></span></p>
+   <p>Valid: <span id="Valid"></span></p>
+   <p>title: <span id="title"></span></p>
+  <p>Pref: <span id="Pref"></span></p>
+  <p>Name: <span id="name"></span></p>
+  <p>Birth: <span id="Birth"></span></p>
+  <p>Sex: <span id="Sex"></span></p>
+  <p>Address1: <span id="Address1"></span></p>
+  <p>Postal: <span id="Postal"></span></p>
+  <p>Country: <span id="Country"></span></p>
+  <p>State: <span id="State"></span></p>
+  <p>Address3: <span id="Address3"></span></p>
+  <p>Postal1: <span id="Postal1"></span></p>
+  <p>Country1: <span id="Country1"></span></p>
+  <p>State1: <span id="State1"></span></p>
+  <p>mobile: <span id="mobile"></span></p>
+  <p>Emergency: <span id="Emergency"></span></p>
+  <p>Email: <span id="Email"></span></p>
+  <p>IHI: <span id="IHI"></span></p>
+  <p>register: <span id="register"></span></p>
+  
+
+  <script>
+    // Get the values stored in sessionStorage.
+    var Medicare = sessionStorage.getItem('mnumber');
+    var Valid = sessionStorage.getItem('valid');
+    var title = sessionStorage.getItem('title');
+    var Name = sessionStorage.getItem('name');
+    var Pref = sessionStorage.getItem('pname');
+    var Birth = sessionStorage.getItem('dob');
+    var Sex = sessionStorage.getItem('sex');
+    var Address1 = sessionStorage.getItem('Address1');
+    var Postal = sessionStorage.getItem('Postal');
+    var Country = sessionStorage.getItem('Country');
+    var State = sessionStorage.getItem('State1');
+    var Address3 = sessionStorage.getItem('Address11');
+    var Postal1 = sessionStorage.getItem('Postal1');
+    var Country1 = sessionStorage.getItem('Country1');
+    var State1 = sessionStorage.getItem('State11');
+    var mobile = sessionStorage.getItem('Mobile');
+    var Emergency = sessionStorage.getItem('Emergency');
+    var Email = sessionStorage.getItem('email');
+    var IHI = sessionStorage.getItem('Home1');
+    var register = sessionStorage.getItem('Register');
+   
+
+    
+    // Update the HTML elements.
+    document.querySelector('#Medicare').innerText = Medicare;
+    document.querySelector('#Valid').innerText = Valid;
+    document.querySelector('#title').innerText = title;
+    document.querySelector('#Name').innerText = Name;
+    document.querySelector('#Pref').innerText = Pref;
+    document.querySelector('#Birth').innerText = Birth;
+    document.querySelector('#Sex').innerText = Sex;
+    document.querySelector('#Address1').innerText = Address1;
+    document.querySelector('#Postal').innerText = Postal;
+    document.querySelector('#Country').innerText = Country;
+    document.querySelector('#State').innerText = State;
+    document.querySelector('#Address3').innerText = Address3;
+    document.querySelector('#Postal1').innerText = Postal1;
+    document.querySelector('#Country1').innerText = Country1;
+    document.querySelector('#State1').innerText = State1;
+    document.querySelector('#mobile').innerText = mobile;
+    document.querySelector('#Emergency').innerText = Emergency;
+    document.querySelector('#Email').innerText = Email;
+    document.querySelector('#IHI').innerText = IHI;
+    document.querySelector('#register').innerText = register;
+  </script>
+</body>
+</html>

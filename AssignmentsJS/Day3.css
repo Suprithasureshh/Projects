@@ -1,0 +1,71 @@
+body{
+   background-image: url('images/images1.jpg');
+}
+.heading{
+    text-align:center;
+    border:2px solid skyblue;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: coral;
+  }
+  .heading h3{
+    text-align: center;
+    width:15%;
+  }
+.login-form{
+    text-align: center;
+}
+.login{
+    padding-bottom: 20px;
+}
+.login label{
+    font-size: 20px;
+   }
+.login input{
+    height: 25px;
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.fp{
+   text-align: left;
+    width:50%;
+    padding-left: 22%;
+}
+button{
+    width: 55%;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding:15px; 
+    background-color: blueviolet;
+    font-size: 15px;  
+    cursor: pointer; 
+}
+.login span{
+  font-style:normal;
+  visibility: hidden;
+
+}
+.login.success input{
+  border-color: green;
+}
+.login.error input{
+  border-color:red;
+}
+.login.error span{
+  color:red;
+  visibility: visible;
+  margin-left: 25%;
+}
+.login .fa-exclamation-circle{
+  visibility: hidden;
+}
+.login.success .fa-exclamation-circle{
+  visibility: visible;
+  color:green;
+}
+.login.error .fa-exclamation-circle{
+  visibility: visible;
+  color: red;
+}

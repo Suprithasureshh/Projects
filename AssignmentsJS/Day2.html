@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student form</title>
+        <link rel="stylesheet" href="Day2.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading_div">
+                <h1>MIT Mysore</h1>
+                <h2>Student Registration Form</h2>
+            </div>
+            <form onsubmit="return registerform()" action="https://mitmysore.in/">
+                <div class="form_div">
+                    <div class="student">
+                         <i class="fa fa-user-circle"></i>
+                         <label >Student Image: </label>
+                         <input type="file" accept="image/*" id="studentimg">
+                         <i class="fa fa-exclamation-circle" id="simageicon" ></i>
+                         <label id="simage"></label>
+                    </div>
+                    <div class="student" >
+                        <i class="fa fa-user"></i>
+                        <label>Student Name: </label>
+                        <input id="sname" type="text" placeholder=" Student name">
+                        <i class="fa fa-exclamation-circle" id="snameicon"></i>
+                        <label id="stdname"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-male fa-2x"></i>
+                        <label>Father's Name: </label>
+                        <input id="fname" type="text" placeholder=" Father's Name">
+                        <i class="fa fa-exclamation-circle" id="fnameicon"></i>
+                        <label id="fatname"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-female fa-2x"></i>
+                        <label>Mother's Name: </label>
+                        <input id="mname" type="text" placeholder=" Mother's Name">
+                        <i class="fa fa-exclamation-circle" id="mnameicon"></i>
+                        <label id="motname"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-users "></i>
+                        <label>Gender: </label>
+                        <input class="gen1" type="radio" id="gender" name="gender" >Male<i class="fas fa-mars"></i>
+                        <input class="gen2" type="radio" id="gender" name="gender">Female<i class="fas fa-venus"></i>
+                        <input class="gen3" type="radio" id="gender" name="gender">Other<i class="fas fa-transgender-alt"></i>
+                      
+                        <label id="gen"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-calendar"></i>
+                        <label>Date of Birth: </label>
+                        <input type="date" id="date">
+                        <label id="dateofbirth"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-envelope"></i>
+                        <label>Email: </label>
+                        <input type="email" placeholder=" example@gmail.com" id="mail">
+                        <i class="fa fa-exclamation-circle" id="mailicon"></i>
+                        <label id="mailto"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fa fa-phone"></i>
+                        <label>Phone No: </label>
+                        <input type="tel" placeholder="xxx-xxx-xxxx" id="phone">
+                        <i class="fa fa-exclamation-circle" id="phoneicon"></i>
+                        <label id="telephone"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fas fa-user-graduate"></i>
+                        <label>Level: </label>
+                        <select id="level">
+                            <option value=""> select</option>
+                            <option value="ug">UG Course</option>
+                            <option value="pg">PG Course</option>
+                        </select>
+                        
+                        <label id="course"></label>
+                    </div>
+                    <div class="student">
+                        <i class="fas fa-sitemap"></i>
+                        <label>Department:</label><br>
+                        <input  type="checkbox" id="depart" name="department" value="CS">Computer Science Engineering<br>
+                        <input  type="checkbox" id="depart" name="department" value="CE">Civil Engineering<br>
+                        <input  type="checkbox" id="depart" name="department" value="EE">Electrical and Electronics Engineering<br>
+                        <input  type="checkbox" id="depart" name="department" value="EC">Electronics and Communication Engineering<br>
+                        <input  type="checkbox" id="depart" name="department" value="IS">Information Science<br>
+                        <input  type="checkbox" id="depart" name="department" value="ME">Mechanical Engineering
+                        
+                        <label id="checkboxdept"></label>
+                    </div>
+                    <div class="student">
+                        <i class="far fa-address-card"></i>
+                        <label>Address: </label>
+                        <textarea cols="70" rows="4" id="addr"></textarea>
+                    </div>
+                </div>
+                <div class="submit_div">
+                    <button type="submit" >submit</button>
+                </div>
+            </form>
+         </div>
+        <script src="Day2.js"></script>
+    </body>
+ </html>

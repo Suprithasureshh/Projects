@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="task.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+       
+                <header class="heading">
+                    <h1 >Patient Registration Form</h1>
+                </header>
+           
+            <form class="forms" action="#">
+                <fieldset>
+                    <legend></legend>
+                    <div class="allbtn">
+                        <button type="contact">Contact details</button>
+                        <button type="contact">other details</button>
+                    </div>
+                    <div class="division1">
+                        <fieldset>
+                            <legend>Primary Details:</legend>
+                            <div class="field1">
+                                <div class="fields">
+                                    <label>Valid till </label><br>
+                                    <input type="date" id="vdate">
+                                    <span></span>
+                                </div>
+                            </div><br>
+                            <div class="fields">
+                                <label>Medicare No:</label>
+                                <input type="number" id="mnumber" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                           
+                            <div class="fields">
+                                <label>Title:</label>
+                                <input type="text" id="title" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Name:</label>
+                                <input type="text" id="name" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Pref.Name:</label>
+                                <input type="text" id="pname" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Date of Birth: </label>
+                                <input type="date" id="date"><br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Sex:</label>
+                                <input class="gen1" type="radio" id="male" name="gender">Male
+                                <input class="gen2" type="radio" id="female" name="gender">Female<br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Family Name:</label>
+                                <input type="text" id="fname" autocomplete="off">
+                                <button>N</button>
+                                <button>I</button>
+                                <span></span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Details:</legend>
+                            <div class="fields">
+                            <label>Phone</label>
+                            </div>
+                            <div class="field2">
+                                <div class="fields">
+                                    <label id="f1">Work</label><br>
+                                    <input type="text" id="work" autocomplete="off">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="field3">
+                                <div class="fields">
+                                    <label id="f2">Home</label><br>
+                                    <input type="text" id="home" autocomplete="off">
+                                    <span></span>
+                                </div>    
+                               
+                            </div>
+                            <div class="field4">
+                                <div class="fields">
+                                    <label id="f3">Fax</label><br>
+                                    <input type="number" id="fax" autocomplete="off">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="field5">
+                                <div class="fields">
+                                    <label id="f4">Mobile</label><br>
+                                    <input type="tel" id="mobile" autocomplete="off">
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i><br>
+                                    <span></span>
+                                </div>    
+                               
+                            </div>
+                            <div class="field6">
+                                <div class="fields">
+                                    <label id="f5">Next of Kin Ph:</label><br>
+                                    <input type="tel" id="kin2" autocomplete="off"><br>
+                                    <span></span>
+                                </div>    
+                            </div>
+                            <div class="field7">
+                                <div class="fields">
+                                    <label id="kin2">Next of Kin</label><br>
+                                    <input type="text" id="kin1" autocomplete="off">
+                                    <span></span>
+                                </div>
+                            </div><br><br><br><br><br><br><br>
+                            <div class="fields">
+                                <label >Emergency number</label>
+                                <input type="tel" id="emergenynum" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                            <div class="fields">
+                                <label>Email</label>
+                                <input type="mail" id="mail" autocomplete="off">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle"></i><br>
+                                <span></span>
+                            </div>
+                        </fieldset> 
+                    </div>
+                    <div class="division2">
+                        <fieldset>
+                            <legend>Address Details:</legend>
+                            <fieldset>
+                                <legend>Residential Address:</legend>
+                                <div class="fields">
+                                    <label>Address 1:</label>
+                                    <textarea cols="20" rows="1" id="address1"></textarea>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i><br>
+                                    <span></span>
+                                </div>
+                                <div class="fields">
+                                    <label>Address 2:</label>
+                                    <textarea cols="20" rows="1" id="address"></textarea>
+                                    <span></span>
+                                </div>
+                               
+                                <div class="fields">
+                                    <label>Suburb:</label>
+                                    <input type="text" id="sub" autocomplete="off">
+                                    <span></span>
+                                </div>
+                               
+                                <div class="fields">
+                                    <label>postal Code:</label>
+                                    <input type="number" id="pcode1" autocomplete="off">
+                                    <button>?</button><br>
+                                   
+                                    <span></span>
+                                </div>
+                                <div class="field8">
+                                    <div class="fields">
+
+                                        <label>Country:</label>
+                                        <select id="country1" onchange="countryselect()">
+                                            <option value="">--select--</option>
+                                            <option value="india">India</option>
+                                            <option value="canada">Canada</option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="field9">
+                                    <div class="fields">
+
+                                        <label>State:</label><br>
+                                        <select id="state1">
+                                            <option value="">--Select State--</option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                               
+                               
+                            </fieldset>
+                            <fieldset>
+                                <legend>Single Address:</legend>
+                                <div class="fields">
+                                    <p>Are Mailing Address and Residential address same?
+                                        <input type="checkbox" id="terms" name="terms1" value="condition">
+                                    </p>
+                                    <span></span>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Mailing Address:</legend>
+                                <div class="fields">
+                                    <label>Address 1:</label>
+                                    <textarea cols="20" rows="1" id="address2"></textarea>
+                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-exclamation-circle"></i><br>
+                                    <span></span>
+                                </div>
+                                <div class="fields">
+                                    <label>Address 2:</label>
+                                    <textarea cols="20" rows="1" id="address"></textarea>
+                                   
+                                    <span></span>
+                                </div>
+                               
+                                <div class="fields">
+                                    <label>Suburb:</label>
+                                    <input type="text" id="sub" autocomplete="off">
+                                    <span></span>
+                                </div>
+                               
+                                <div class="fields">
+                                    <label>postal Code:</label>
+                                    <input type="number" id="pcode2" autocomplete="off">
+                                    <button>?</button><br>
+                                   
+                                    <span></span>
+                                </div>
+                                <div class="field10">
+                                    <div class="fields">
+
+                                        <label>Country:</label>
+                                        <select id="country2" onchange="countryselect2()">
+                                            <option value="">--select--</option>
+                                            <option value="india">India</option>
+                                            <option value="canada">Canada</option>
+                                        </select>
+                                        <span></span>
+                                    </div>    
+                                </div>
+                                <div class="field11">
+                                    <div class="fields">
+
+                                        <label>State:</label>
+                                        <select id="state2">
+                                        <option value="">--Select State--</option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </fieldset>
+                        <div class="fields">
+                            <label>IHI number</label>
+                            <input type="number" id="ihi" autocomplete="off">
+                            <button type="reset">Clear IHI</button>
+                            <br>
+                            <span></span>
+                        </div>
+                        <div class="fields">
+                            <label>Number Status:</label>
+                            <input type="text" id="numstatus" autocomplete="off">
+                            <span></span>
+                        </div>
+                        <div class="fields">
+                            <label>Record Status:</label>
+                            <input type="text" id="recstatus" autocomplete="off">
+                            <span></span>
+                        </div>
+                        <div class="fields">
+                            <label>Last Update:</label>
+                            <input type="text" id="update" autocomplete="off">
+                            <span></span>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="fields">
+                    
+                    <label>Registered by:</label>
+                    <input type="text" id="registerby" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                    </div>
+                <div class="btn">
+                <button id="submit">Register</button>
+                <button type="reset">Clear</button>
+                <button type="close">Close</button>
+            </div>
+            </form>
+            
+        </div>
+        <script src="task.js"></script>
+    </body>
+
+</html>

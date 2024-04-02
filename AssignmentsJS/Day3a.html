@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="Day3a.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <ul class="heading">
+                  <li> <img class="img" src="images/logo.jpg"></li> 
+                  <li><h2>Quiz Registration Form</h2></li>
+                </ul>
+            </header>
+            <form class="forms" action="#" >
+                <div class="signup-form">
+                    <label>Username:</label><br>
+                    <input type="text" placeholder="Username" id="username"  autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    
+                    <label>Email:</label><br>
+                    <input type="mail" placeholder="Mail" id="mail" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                   
+                    <label>PhoneNumber:</label><br>
+                    <input type="tel" placeholder="000-000-0000" id="phone" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>Gender:</label><br>
+                    <input class="gen1" type="radio" id="gender" name="gender" >Male<br>
+                    <input class="gen2" type="radio" id="gender" name="gender">Female<br>
+                    <input class="gen3" type="radio" id="gender" name="gender">Other<br>
+                     <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>Course:</label><br>
+                    <select id="level">
+                        <option value="">--select--</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>Password:</label><br>
+                    <input type="text" placeholder="Password" id="password" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>ConfirmPassword:</label><br>
+                    <input type="text" placeholder="Confirm Password" id="confirmpassword" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>Address:</label>
+                    <textarea cols="30" rows="3" id="address">(Optional)
+                        
+                    </textarea>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i><br>
+                    <span></span>
+                </div>
+                <div class="signup-form">
+                    <label>Terms of Service</label><br>
+                    <input  type="checkbox" id="terms" name="terms1" value="condition">I accept the <a href="">Terms and Conditions</a>
+                    <span></span>
+                </div>
+                <br>
+                <button id="submit">Login</button>
+            </form>
+            <footer>
+                2023-<a href="https://joyitsolutions.co/"> JoyitSolutions</a>  All Right Reserved. 
+            </footer>
+        </div>
+        <script src="Day3a.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bootstrap example</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.css">
+
+    </head>
+    <body>
+        <div class="container-fluid px-4 mt-3">
+            <div>
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId">Signup here</button>
+            </div>
+            <div id="modalId" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Quiz</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <header>
+                                    <ul class="heading">
+                                      <li> <img class="img" src="images/logo.jpg"></li> 
+                                      <li><h2>Quiz Registration Form</h2></li>
+                                    </ul>
+                                </header>
+                                <form class="forms" action="#" >
+                                    <div class="signup-form">
+                                        <label>Username:</label><br>
+                                        <input type="text" placeholder="Username" id="username"  autocomplete="off">
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        
+                                        <label>Email:</label><br>
+                                        <input type="mail" placeholder="Mail" id="mail" autocomplete="off">
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                       
+                                        <label>PhoneNumber:</label><br>
+                                        <input type="tel" placeholder="000-000-0000" id="phone" autocomplete="off">
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>Gender:</label><br>
+                                        <input class="gen1" type="radio" id="gender" name="gender" value="Male" >Male<br>
+                                        <input class="gen2" type="radio" id="gender" name="gender" value="Female">Female<br>
+                                        <input class="gen3" type="radio" id="gender" name="gender" value="Other">Other<br>
+                                         <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>Course:</label><br>
+                                        <select id="level">
+                                            <option value="">--select--</option>
+                                            <option value="html">HTML</option>
+                                            <option value="css">CSS</option>
+                                            <option value="js">JavaScript</option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>Password:</label><br>
+                                        <input type="text" placeholder="Password" id="password" autocomplete="off">
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>ConfirmPassword:</label><br>
+                                        <input type="text" placeholder="Confirm Password" id="confirmpassword" autocomplete="off">
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>Address:</label>
+                                        <textarea cols="30" rows="3" id="address">(Optional)
+                                            
+                                        </textarea>
+                                        <i class="fa fa-check-circle"></i>
+                                        <i class="fa fa-exclamation-circle"></i><br>
+                                        <span></span>
+                                    </div>
+                                    <div class="signup-form">
+                                        <label>Terms of Service</label><br>
+                                        <input  type="checkbox" id="terms" name="terms1" value="condition">I accept the <a href="">Terms and Conditions</a>
+                                        <span></span>
+                                    </div>
+                                    <br>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" id="add-btn" class="btn btn-success" data-bs-dismiss="modal" onClick="insert()">Login</button>
+                                    </div>
+                                </form>
+                                <footer>
+                                    2023-<a href="https://joyitsolutions.co/"> JoyitSolutions</a>  All Right Reserved. 
+                                </footer>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+            <table class="table table-hover table-striped table-bordered caption-top mt-3">
+                <caption style="color:crimson;">Register Details</caption>
+                    <thead>
+                        <tr class="table-dark ">
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>PhoneNumber</th>
+                            
+                            <th>Course</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+    <script src="bootstrapNew.js"></script>
+</html>

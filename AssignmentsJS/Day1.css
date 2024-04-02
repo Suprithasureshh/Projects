@@ -1,0 +1,14 @@
+.body-tag{ background:grey; }
+body:after {
+  background:white;
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:100;
+  left:100;
+  content:" ";
+  z-index:-100;}
+  
+  .p-tag{
+    color:cornflowerblue;
+  }

@@ -1,0 +1,89 @@
+html { 
+    background-color: rgba(255, 255, 255, 0.967);
+}
+.heading_div{
+    text-align: center;
+    background-color: rgba(38, 145, 145, 0.686);
+    
+}
+.heading_div h1{
+    padding-top: 1%;
+}
+.heading_div h2 {
+    padding-bottom:1%;
+    text-decoration:underline;
+}
+body {
+    background-image:url("images/backgrond1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-right: 8%; 
+    margin-left: 12%;
+}
+.form_div div{
+    padding-top: 1%;
+    padding-left: 25%;
+    padding-bottom: 1%;
+    font-size: larger;
+    
+}
+.gender input[type]{
+    width:18px;
+    height:18px;
+}
+
+.form_div label{
+    color: rgb(0, 0, 0);
+    padding-left:1%;
+    display:inline-block;
+    width:20%;
+}
+.form_div input,select {
+    color: rgba(0, 0, 0, 0.861);
+    font-size:large;
+    border-radius:5px;
+    margin-left: 2%;
+    padding-left:1%;
+}
+#depart{
+    margin-left:26%;
+}
+.submit_div {
+    text-align: center;
+    padding-left:.8%;
+    padding-top: .8%;
+    padding-bottom:1.2%;
+}
+.submit_div button {
+    font-size:25px;
+    border-radius:10px;
+    margin-left: 15%;
+    padding-top:.5%;
+    padding-bottom:.5%;
+    background-color:rgba(51, 51, 110, 0.402);
+    color:rgb(0, 0, 0);
+}
+
+
+#simage,#stdname,#fatname,#motname,#gen,#dateofbirth,#mailto,#course,#checkboxdept,#telephone{
+    color:red;
+    width:50%;
+    padding-left: 26.3%;
+    font-size:medium;
+}
+#simageicon,#snameicon,#fnameicon,#mnameicon,#mailicon,#phoneicon{
+    color:red;
+    position: absolute;
+    visibility: hidden;
+    margin-left: -25px;
+    margin-top: 4px;
+
+}
+#fnameicon,#mnameicon{
+    margin-top:   16px;
+}
+
+
+
+
