@@ -1,0 +1,191 @@
+DataAnnotations---
+DataAnnotations is a set of attributes that are used to specify metadata for properties, classes, and other code elements in .NET applications. 
+They are used to provide additional information about data that can be used by frameworks and tools to perform actions such as data validation, formatting, and mapping.
+
+Some examples of DataAnnotations attributes include:
+
+1.Required: Specifies that a property is required and must have a value.
+2.StringLength: Specifies the maximum length of a string property.
+3.Range: Specifies the range of valid values for a numeric property.
+4.RegularExpression: Specifies a regular expression pattern that a string property must match.
+5.Display: Specifies how a property should be displayed in a user interface.
+
+
+ public class EmployeeRegister
+    {
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Name is required.")]
+        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Name contains only alphabets.")]
+        public string Name { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Invalid Email address.")]
+        public string Email { get; set; } = string.Empty;
+
+        public string Address { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Password field is required")]
+        [RegularExpression(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$",
+            ErrorMessage = "Password should contain atleast one lowercase,uppercase,number and a symbol")]
+        public string Password { get; set; } = string.Empty;
+
+        public DateTime RegisterDate { get; set; } = DateTime.Now;
+
+        public bool isActive { get; set; }
+
+        [ForeignKey("Roles")]
+        public int RoleId { get; set; }
+    }
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IOC(Inversion of Control)--
+	IoC is often used to manage dependencies between controllers and their services.
+	Rather than creating instances of services directly in the controller, the controller can define its dependencies through constructor parameters. 
+	The IoC container can then inject the appropriate service instance into the controller at runtime.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+There are four types of action filters in ASP.NET Web API:
+
+1.Authorization filters: Used to perform authentication and authorization before executing the action method.
+
+2.Action filters: Used to perform extra processing before or after executing the action method.
+
+3.Result filters: Used to modify the response after executing the action method but before returning it to the client.
+
+4.Exception filters: Used to handle exceptions that occur during the execution of the action method.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+Action Filter---
+	Action filter is a type of filter that can be used to add additional behavior to action methods before or after they are executed. 
+	Action filters can be used to perform tasks such as logging, caching, authorization, validation, and exception handling.
+	Action filters and content provide a powerful mechanism for building robust and flexible Web API applications. 
+Content---
+ 	content negotiation is used to determine the format and encoding of the content that is sent between the client and the server. 
+	Web API supports a wide range of content formats, including XML, JSON, plain text, and binary data.
+
+Action filters are implemented as classes that implement the IActionFilter, IAsyncActionFilter, IResultFilter, IAsyncResultFilter, IExceptionFilter, or IAsyncExceptionFilter interfaces. 
+Each of these interfaces defines one or more methods that are called by the ASP.NET Core pipeline at different stages of the action's execution.
+
+IActionFilter--- is an interface  that defines methods for filters that are executed before and after a controller action is executed.
+
+The IActionFilter interface has two methods:
+
+1.OnActionExecuting: This method is called before the controller action is executed.
+
+
+
+2.OnActionExecuted: This method is called after the controller action has been executed. 
+
+   
+
+ public class LoggingFilter : IActionFilter
+    {
+        private readonly ILogger<LoggingFilter> _filter;
+
+        public LoggingFilter(ILogger<LoggingFilter> filter)
+        {
+            _filter = filter;
+        }
+
+        public void OnActionExecuting(ActionExecutingContext context)
+        {
+            _filter.LogInformation("Action starting:{ActionName}", context.HttpContext.Request.Path);
+        }
+
+        public void OnActionExecuted(ActionExecutedContext context)
+        {
+            _filter.LogInformation("Action Finished:{ActionName}", context.HttpContext.Response.StatusCode);
+        }
+    }
+
+[ServiceFilter(typeof(LoggingFilter))]--controller
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception filters--
+exception filters can be used to catch and handle specific types of exceptions that occur during the processing of API requests.
+
+When an API request is made, it may encounter exceptions such as invalid input parameters, database connection errors, or other runtime errors. 
+To handle these exceptions, the API can use exception filters to catch them and return an appropriate error response to the client.
+
+1.ArgumentException: This exception is thrown when an argument passed to a method is invalid.
+
+2.InvalidOperationException: This exception is thrown when an operation is not valid in the current state of an object.
+
+3.ArgumentNullException: This exception is thrown when a null argument is passed to a method that does not allow null arguments.
+
+4.FormatException: This exception is thrown when a string is not in the correct format for a particular data type.
+
+5.UnauthorizedAccessException: This exception is thrown when a user does not have permission to perform a particular operation.
+
+6.HttpRequestException: This exception is thrown when an error occurs while sending an HTTP request.
+
+7.DbUpdateException: This exception is thrown when an error occurs while updating a database.
+
+8.InvalidOperationException: This exception is thrown when an operation is not valid in the current state of an object.
+
+9.NotSupportedException: This exception is thrown when an operation is not supported by a particular object.
+
+10.customException:Custom exceptions are user-defined exceptions that extend the base Exception class.
+ 
+
+public class UserException1 : Exception
+        {
+           public UserException1() { }
+           public UserException1(string message) : base(message) { }
+        }
+        public class UserException2 : Exception
+        {
+            public UserException2() { }
+            public UserException2(string message) : base(message) { }
+        }
+        public class CustomExceptionFilterAttribute : ExceptionFilterAttribute
+        {
+            public override void OnException(ExceptionContext context)
+            {
+                
+                if (context.Exception is UserException1)
+                {
+                    context.Result = new BadRequestObjectResult("There is No data with Id");
+                }
+                else if (context.Exception is UserException2)
+                {
+                    context.Result = new BadRequestObjectResult("This Name is already Exists in the table");
+                }
+                else if (context.Exception is ArgumentNullException)
+                {
+                    context.Result = new BadRequestObjectResult("Argument Null Exception exception occurred.");
+                }
+                context.ExceptionHandled = true;
+            }
+        }
+
+[CustomExceptionFilter]
+  [HttpPut("UpdateEmployee")]
+
+        public void UpdateEmployee(int id,EmployeeRegister user)
+        {
+            if(id!=user.Id)
+            {
+                throw new UserException1();
+            }
+            else
+            {
+                _repository.UpdateEmployee(user);
+            }
+            
+        }
+   [HttpPost("Roles")]
+
+        public IActionResult Roles(Roles role)
+        {
+            if (_context.RolesDetails.Any(b => b.Name == role.Name))
+            {
+                throw new UserException2();
+            }
+            else
+            {
+                _repository.Roles(role);
+                return Ok();
+            }
+        }
+       
