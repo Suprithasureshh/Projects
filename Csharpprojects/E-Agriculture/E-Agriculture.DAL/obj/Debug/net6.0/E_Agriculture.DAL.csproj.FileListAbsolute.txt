@@ -1,0 +1,14 @@
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\bin\Debug\net6.0\E_Agriculture.DAL.deps.json
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\bin\Debug\net6.0\E_Agriculture.DAL.runtimeconfig.json
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\bin\Debug\net6.0\E_Agriculture.DAL.dll
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\bin\Debug\net6.0\E_Agriculture.DAL.pdb
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.csproj.AssemblyReference.cache
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.AssemblyInfoInputs.cache
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.AssemblyInfo.cs
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.csproj.CoreCompileInputs.cache
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.dll
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\refint\E_Agriculture.DAL.dll
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.pdb
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\E_Agriculture.DAL.genruntimeconfig.cache
+C:\Users\hi\source\repos\E-Agriculture\E-Agriculture.DAL\obj\Debug\net6.0\ref\E_Agriculture.DAL.dll

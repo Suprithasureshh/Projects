@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EmployeeRegisterDetails",
+    "\\EmployeeRegisterDetails\\DataContext",
+    "\\EmployeeRegisterDetails\\Repository"
+  ],
+  "SelectedNode": "\\EmployeeRegisterDetails\\Repository\\EmployeeRegisterRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
