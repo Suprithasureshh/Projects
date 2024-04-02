@@ -1,0 +1,23 @@
+.contactlist{
+  margin-top: 10%;
+    margin-left: 43%;
+    color:rgb(35, 204, 148);
+}
+.paymentlist{
+    margin-top: 10%;
+    margin-left: 40%;
+    color:rgb(21, 168, 179); 
+    font-size: 19px;
+}
+.products{
+    width:30px;
+    height: 60px;
+    margin-top:22;
+}
+.buttons{
+    background-color: #111827;
+    color:white;
+    height: 30px;
+    border-radius: 5px;
+    bottom: 0;
+}
