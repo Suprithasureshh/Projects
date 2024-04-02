@@ -1,0 +1,53 @@
+.title{
+    margin-left: 3%;
+}
+.header{
+    background-color: #101e8a;
+    width:93.5%;
+    height: 10vh;
+    overflow-y: auto;
+    z-index:1;
+    margin-left: 3%;
+}
+.scrollcontainer{
+    background-color: hsl(240, 30%, 95%);
+    width:93.5%;
+    height: 72vh;
+    margin-left: 3%;
+    margin-top: 1%;
+    
+}
+.scrolling-image {
+   animation: marquee 25s linear infinite; 
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(93.5%);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+  }
+  .images{
+   
+    width:24%;
+    height: 40vh;
+    margin-top: 4%;
+    margin-left: 1%;
+  }
+  .scrolling-text {
+    animation: marquee 25s linear infinite;
+   }
+   
+   @keyframes marquee {
+     0% {
+       transform: translateX(93.5%);
+     }
+     100% {
+       transform: translateX(-90%);
+     }
+   }
+   .text{
+    margin-left: 41%;
+   }

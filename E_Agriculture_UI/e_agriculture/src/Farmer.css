@@ -1,0 +1,74 @@
+.section-links{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 14px;
+    background-color: #101e8a;
+    width:98%;
+    height: 14vh;
+    /* overflow-y: auto; */
+    z-index:1;
+  
+}
+.heading{
+ margin-left: 2%;
+}
+.section-links span {
+    font-size: 18px; 
+    color: white;
+    margin-left: 3%;
+  }
+.pagecontainer{
+    position:fixed;
+    width:100%;
+   
+}
+
+
+.ant-table-wrapper .ant-table{
+    background-color: rgba(140, 139, 139, 0.44);
+    color:white;
+  
+    
+}
+.ant-table-wrapper .ant-table-thead >tr>th {
+color: white;
+background-color: rgb(16, 159, 16);
+
+
+}
+.ant-table-wrapper .ant-table-tbody .ant-table-row> .ant-table-cell-row-hover{
+    background-color: #3b5a2c;
+}
+
+.ant-card{
+    background-color: rgba(140, 139, 139, 0.44);
+    color:white;
+}
+.ant-pagination-next {
+    background-color :white;
+    color:black ;
+}
+.ant-pagination-next button{
+    color:black;
+}
+.ant-pagination-prev button{
+color: black;
+}
+.ant-pagination-prev {
+    background-color :white;
+    color:black ; 
+}
+.tablebackgroundimage {
+    background-image: url('../public/Images/P6.jpg');
+    background-size: cover;
+    height: 480px;
+    position: relative;
+  }
+
+.ant-table-wrapper .ant-table-container table>thead>tr:first-child >*:first-child {
+    border-radius: 0%;
+}
+.ant-table-wrapper .ant-table-container table>thead>tr:last-child >*:last-child {
+    border-radius: 0%;
+}

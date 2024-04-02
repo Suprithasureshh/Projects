@@ -1,0 +1,74 @@
+.form-container{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 16px;
+}
+.signin-button {
+    text-transform: none;
+    font-size: 18px;
+    color: white;
+    height: 60.5px;
+    border: none; 
+    border-radius: 0;
+}
+.signin-button.button-clicked {
+    color: black; 
+    background-color: white; 
+}
+.login-modal{
+    border: none; 
+    border-radius: 0;
+    margin-left: 74.4%;
+    margin-top: 2.7%;
+    
+}
+.check{
+    margin-top: 4.7%;
+}
+.fpass{
+    margin-left:52%;
+    margin-top: -11.2%;
+    
+}
+.signin{
+    margin-top: -1%;
+	width:90%;
+	height:5vh;
+	margin-left: 5%;
+	border-radius:3px;
+	background-color:#0352bf;
+	color:white ;
+	border: 0;
+}
+.signup-button {
+    text-transform: none;
+    font-size: 18px;
+    color: white;
+    margin-left: 80%;
+    height: 60.5px;
+    border: none; 
+    border-radius: 0;
+}
+.signup-button.button-clicked {
+    color: black; 
+    background-color: white; 
+}
+.signup-modal{
+    border: none; 
+    border-radius: 0;
+    margin-left: 58%;
+    margin-top: 2.7%;
+    z-index: -1;
+    
+}
+.signup{
+    margin-top: -1%;
+	width:90%;
+	height:5vh;
+	margin-left: 6%;
+	border-radius:3px;
+	background-color:#0352bf;
+	color:white ;
+	border: 0;
+}
